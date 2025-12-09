@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login | Hootka</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Iniciar sesión</h2>
+      {% if error %}
+      <p class="error">{{ error }}</p>
+      {% endif %}
+
+      <form method="POST" action="/login">
+        <input type="text" name="usuario" placeholder="Usuario" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Contraseña"
+          required
+        />
+        <button type="submit">Entrar</button>
+      </form>
+
+      <!-- 🔹 Enlace para ir al registro -->
+      <p class="login-link">
+        ¿No tienes cuenta?
+        <a href="/register">Regístrate aquí</a>
+      </p>
+    </div>
+  </body>
+</html>
