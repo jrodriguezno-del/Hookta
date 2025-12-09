@@ -5,6 +5,7 @@ import json
 app = Flask(__name__)
 app.secret_key = "hootka_secret_key"
 
+
 preguntas = []
 
 @app.route('/')
