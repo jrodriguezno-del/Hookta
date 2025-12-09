@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS respuestas (
 
 INSERT INTO usuarios (usuario, password) VALUES
 ('admin', '1234'),
-('daniel', '4321')
+('jairo', '4321')
 ON DUPLICATE KEY UPDATE password=VALUES(password);
 ```
 
@@ -144,7 +144,7 @@ hootka/
 2. Clona o descarga el repositorio:
 
 ```bash
-git clone https://github.com/danielfruizt-code/Hookta
+git clone https://github.com/jrodriguezno-del/Hookta.git
 cd hootka
 ```
 
